@@ -1,0 +1,317 @@
+body{
+    background-color: antiquewhite;
+}
+
+header{
+    background-color: rgb(233, 171, 56);
+    margin: auto;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    width: 98%;
+    height: 15vh;
+}
+
+#logo{
+    width: 8%;
+    height: 98%;
+    border-radius: 1.2em;
+    animation: crecer 3s infinite;
+}
+
+@keyframes crecer{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.7);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 100%;
+    font-family: 'Oswald', sans-serif;
+    float: right;
+    margin: 1em;
+    background-color: lawngreen;
+    width: 10vw;
+    text-align: center;
+    height: 8vh;
+    border-radius: 0.5em;
+    line-height: 8vh
+}
+
+a:hover{
+    box-shadow: 0em 0em 0.4em 0.4em white;
+    width: 19vw;
+    transition: 1s;
+}
+
+#grande{
+    text-decoration: none;
+    color: white;
+    font-size: 100%;
+    float: right;
+    margin: 1em;
+    background-color: lawngreen;
+    text-align: center;
+}
+
+#grande:hover{
+    box-shadow: 0px 0px 0.4em 0.4em white;
+    width: 19vw;
+    transition: 1s;
+}
+
+#elcentro{
+    border-radius: 50%;
+    width: 35vw;
+    height: 50vh;
+    display: block;
+    box-shadow: 0em 0.4em 0.8em 0.4em;
+    margin-left: 32.5%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    animation: saltito 3s infinite;
+}
+
+@keyframes saltito{
+    0%{
+        transform: translateY(0em);
+    }
+    50%{
+        transform: translateY(2em);
+    }
+    100%{
+        transform: translateY(0em)
+    }
+}
+
+#titulo{
+    margin-left:20%;
+    margin-top: 3%;
+    font-size: 150%;
+    font-family: 'Edu TAS Beginner', cursive;
+    background-color: grey;
+    width: 60vw;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    border: 0.2em solid black;
+    animation: crece 3s infinite;
+}
+
+
+@keyframes crece{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#contenedor{
+    width: 100%;
+    margin: auto;
+    max-width: 1470px;
+
+}
+
+#icono{
+    width: 8vw;
+    height: 8vh;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+    display: none;
+}
+
+#icono:hover{
+    background-color: lime;
+    opacity: 0.8;
+    border-radius: 0.5em;
+}
+
+#menumodocel{
+    background-color: cornflowerblue;
+    color: white;
+    width: 20%;
+    height: 50vh;
+    padding: 1%;
+    text-align: center;
+    opacity: 0.7;
+    position: absolute;
+    top: 18.2vh;
+    right: 1%;
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+    display: none;
+}
+
+li{
+    list-style: none;
+}
+
+#modocel1{
+    margin: 0%;
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 1%;
+    left: 20%;   
+}
+#modocel2{
+    margin: 0%;
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 20%;
+    left: 20%;   
+}
+#modocel3{
+    margin: 0%;
+    background-color: cornflowerblue; 
+    position: absolute;
+    top: 40%;
+    left: 20%;  
+}
+
+#modocel4{
+    margin: 0%;
+    background-color: cornflowerblue; 
+    position: absolute;
+    top: 60%;
+    left: 20%;  
+}
+
+#modocel0{
+    margin: 0%;
+    background-color: cornflowerblue; 
+    position: absolute;
+    top: 80%;
+    left: 20%;  
+}
+
+@media screen and (max-width:1023px) {
+    header{
+        width: 98%;
+    }
+    a{
+        font-size: 100%;
+
+    }
+    #grande{
+        font-size: 100%;
+    }
+    #elcentro{
+        display: block;
+        margin-top: 3%;
+        margin-left: 35%;
+    }
+    #titulo{
+        font-size: 100%;
+        margin-top: 10%;
+    }
+    #logo{
+        width: 12vw;
+        height: 15vh;
+    }
+    #menumodocel{
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px){
+    a{
+        display:none;
+    }
+    #icono{
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    #logo{
+        width: 20vw;
+        height: 15vh;
+        float: right;
+    }
+    #titulo{
+        margin-top: 10%;
+        margin-left: 3%;
+        font-size: 100%;
+        width: 90vw;
+    }
+    #menumodocel{
+        background-color: cornflowerblue;
+        color: white;
+        width: 25%;
+        height: 50vh;
+        padding: 1%;
+        text-align: center;
+        opacity: 0.7;
+        position: absolute;
+        top: 18.2vh;
+        left: 1.8%;
+        display: flex;
+        justify-content: center;
+        font-size: 100%;
+        display: none;
+    }
+    #modocel0{
+        display: block;
+    }
+    #modocel1{
+        display: block;
+    }
+    #modocel2{
+        display: block;
+    }
+    #modocel3{
+        display: block;
+    }
+    #modocel4{
+        display: block;
+    }
+    #modocel:hover{
+        box-shadow: 0px 0px 0.3em 0.3em white;
+        width: 8vw;
+    }
+
+}
+
+@media screen and (max-width:415px){
+    #titulo{
+        margin-top: 10%;
+        margin-left: 3%;
+        font-size: 90%;
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:400px){
+    #titulo{
+        margin-top: 10%;
+        margin-left: 3%;
+        font-size: 80%;
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:300px){
+    #titulo{
+        margin-top: 10%;
+        margin-left: 3%;
+        font-size: 60%;
+        width: 90vw;
+    }
+}

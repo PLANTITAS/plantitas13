@@ -1,0 +1,165 @@
+header{
+    background-color:purple;
+    margin: auto;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    width: 98%;
+    height: 15vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+body{
+    background-color: plum;
+}
+
+img{
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    margin-left: 7%;
+    border-radius: 1.2em;
+    box-shadow: 0px 0px 1.5em 0.6em yellow;
+    animation: crecer 3s infinite;
+}
+
+@keyframes crecer{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+button{
+    float: right;
+    margin-right: 2%;
+    position: absolute;
+    top: 8%;
+    right: 3%;
+    background-color: lime;
+    border: 0.2em solid white;
+    width: 10vw;
+    height: 5vh;
+    font-size: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: crecido 1.5s infinite;
+}
+
+button:hover{
+    box-shadow: 0px 0px 1em 0.5em white;
+}
+
+@keyframes crecido{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.datos{
+    float: right;
+    margin-top: 3.5%; 
+    margin-right: 15%;
+    background-color: yellow;
+    padding: 2%;
+    border-radius: 1.3em;
+    border: 0.3em solid green;
+    font-size: 100%;
+    animation: saltito 5s infinite;
+    width: 30vw;
+    height: 65vh;
+}
+
+@keyframes saltito{
+    0%{
+        transform: translateY(0em);
+    }
+    50%{
+        transform: translateY(2em);
+    }
+    100%{
+        transform: translateY(0em)
+    }
+}
+
+h2{
+    color: white;
+    font-size: 200%;
+    margin-left: 20%;
+    animation: mover 2s infinite;
+}
+
+@keyframes mover{
+    0%{
+        transform: translateX(40%);
+    }
+    50%{
+        transform: translateX(-30%);
+    }
+    100%{
+        transform: translateX(40%);
+    }
+}
+
+b{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+p{
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+@media screen and (max-width:1023px){
+    button{
+        width: 15vw;
+    }
+    .datos{
+        margin: 2%;
+        width: 40vw;
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width:767px){
+    img{
+        width: 80%;
+    }
+    .datos{
+        width: 60%;
+        height: 70vh;
+        position: absolute;
+        top: 85%;
+        margin-left: 15%;
+    }
+    header{
+        width: 90%;
+    }
+    h2{
+        font-size: 120%;
+    }
+    button{
+        width: 20vw;
+        margin-right: 5%;
+    }
+    a{
+        font-size: 90%;
+    }
+}

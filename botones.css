@@ -1,0 +1,215 @@
+img{
+    width: 25vw;
+    height: 35vh;
+    display: none;
+    border-radius: 1.2em;
+    box-shadow: 0px 0px 1.5em 0.6em black;
+    animation: mover 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes mover{
+    0%{
+        transform: rotate(3deg);
+    }
+    50%{
+        transform: rotate(-3deg);
+    }
+    100%{
+        transform: rotate(3deg);
+    }
+}
+
+.mostrar{
+    display: block;
+}
+
+span{
+    display: grid;
+    grid-template-columns: repeat(3,7fr);
+    grid-template-rows: repeat(3,7fr);
+    gap: 5%;
+    position: absolute;
+    left: 5%;
+    margin-top: 3%;
+}
+
+header{
+    background-color: rgb(233, 171, 56);
+    margin: auto;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    width: 98%;
+    height: 15vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    color: white;
+    font-family: 'Kenia', sans-serif;
+    font-size: 130%;
+}
+
+h2{
+    animation: crece 2s infinite;
+}
+
+@keyframes crece{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+button{
+    margin: 0.8%;
+    background-color: cornflowerblue;
+    color: white;
+    border: 0.2em solid white;
+    width: 15%;
+    height: 5vh;
+    border-radius: 1.2em;
+    font-size: 110%;
+    font-family: 'Indie Flower', cursive;
+    animation: crecido 2s infinite;
+}
+
+@keyframes crecido{
+    0%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+button:hover{
+    background-color: lime;
+    transition: 2s;
+    cursor: pointer;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.guia{
+    width: 12vw;
+    height: 10vh;
+    background-color: grey;
+    border: 0.3em double black;
+    text-align: center;
+    line-height: 3vh;
+    color: white;
+    font-size: 65%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0.5%;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    animation: saltito 3s infinite;
+}
+
+@keyframes saltito{
+    0%{
+        transform: translateY(0em);
+    }
+    50%{
+        transform: translateY(-0.8em);
+    }
+    100%{
+        transform: translateY(0em)
+    }
+}
+
+@media screen and (max-width:600px){
+    span{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: none;
+    }
+    button{
+        font-size: 60%;
+        width: 20vw;
+        margin-bottom: 50px;
+    }
+    .bot4{
+        position: absolute;
+        top: 27%;
+        left: 2%; 
+    }
+    .bot5{
+        position: absolute;
+        top: 27%;
+        left: 25%; 
+    }
+    .guia{
+        font-size: 65%;
+        position: absolute;
+        top: 23%;
+        width: 25vw;
+    }
+    header{
+        width: 95%;
+    }
+    img{
+        width: 70vw;
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width:767px){
+    span{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: none;
+    }
+    button{
+        font-size: 60%;
+        width: 20vw;
+        margin-bottom: 50px;
+    }
+    .bot4{
+        position: absolute;
+        top: 27%;
+        left: 2%; 
+    }
+    .bot5{
+        position: absolute;
+        top: 27%;
+        left: 25%; 
+    }
+    .guia{
+        font-size: 65%;
+        position: absolute;
+        top: 23%;
+        width: 25vw;
+    }
+    header{
+        width: 95%;
+    }
+    img{
+        width: 80vw;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width:1023px){
+    button{
+        width: 20vw;
+    }
+    .guia{
+        font-size: 50%;
+    }
+    h2{
+        font-size: 120%;
+    }
+}
